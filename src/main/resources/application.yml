@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+# Redis 配置
+redis:
+  database: 0  #数据库索引(默认为0)
+  host: 127.0.0.1
+  port: 6379  #默认链接端口
+  password:  #默认为空
+  lettuce:
+    pool:
+      max-active: 8 #最大链接池
+      max-wait: -1 #最大阻赛等待时间（使用负值没有限制）默认为-1
+      max-idle: 8 #连接池中的最大空闲连接 默认 8
+      min-idle: 0
